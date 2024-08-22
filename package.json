@@ -1,0 +1,36 @@
+{
+  "name": "job-finder",
+  "version": "1.0.0",
+  "description": "A platform that allows job postings and candidate applications for selection processes, streamlining recruitment and hiring for companies and professionals.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiqf/job-finder.git"
+  },
+  "keywords": [
+    "jobs",
+    "opportunities",
+    "express",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiqf/job-finder/issues"
+  },
+  "homepage": "https://github.com/kiqf/job-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
