@@ -32,4 +32,3 @@ app.get('/', (req, res) => {
 //Jobs Routes
 
 app.use('/jobs', require('./routes/jobs'));
-
