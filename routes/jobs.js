@@ -5,6 +5,10 @@ const Job = require('../models/job');
 router.get('/test', (req, res) => {
     res.send('Welcome to the Job Finder');
 })
+
+router.get('/add', (req, res) => {
+    res.render('add');
+})
 // Add job via POST
 
 router.post('/add', (req, res) => {

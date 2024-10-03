@@ -1,0 +1,37 @@
+<div id="add-form-container" class="mt-5 d-flex justify-content-center align-items-center">
+        <div id="form-box" class="col-md-6">
+            <h1 class="text-center mb-4">Divulgue a vaga preenchendo o formulário:</h1>
+            <h2 class="text-danger mb-4">Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
+            <form action="">
+                <div class="form-group mb-3">
+                    <label for="title">Título da Vaga:</label>
+                    <input type="text" class="form-control" id="title" name="title"
+                        placeholder="Digite o título da vaga" required>
+                    <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e
+                        objetivo.</small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="description">Descrição da Vaga:</label>
+                    <textarea type="text" class="form-control" id="description" name="description"
+                        placeholder="Descreva as atividades do Desenvolvedor:" required></textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="company">Empresa Contratante:</label>
+                    <input type="text" class="form-control" id="company" name="company"
+                        placeholder="Digite a Empresa que irá contratar" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Digite o E-mail para Contato" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="salary">Salário:</label>
+                    <input type="text" class="form-control" id="salary" name="salary"
+                        placeholder="Digite o Salário da Vaga" required>
+                </div>
+                <input type="hidden" name="new_job" value="1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
