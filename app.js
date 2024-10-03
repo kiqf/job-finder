@@ -39,10 +39,14 @@ db
 
 // Routes
 app.get('/', (req, res) => {
-    job.findAll({order: [['createdAt', 'DESC']]
+    Job.findAll({order: [
+        ['createdAt', 'DESC']
+    ]})
+    .then(jobs => {
+        res.render('index', {
+            jobs
+        })
     })
-        then 
-    res.render('index');
 });
 
 //Jobs Routes

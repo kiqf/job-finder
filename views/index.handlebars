@@ -11,34 +11,18 @@
         <div id="jobs-container" class="container">
             <h2 id="job-list-title">Veja as nossas vagas em destaque.</h2>
             <ul id="job-list" class="list-unstyled">
+                {{#each jobs}}
                 <li class="d-flex align-items-start">
                     <img src="/img/icon.svg" alt="Company">
                     <div>
-                        <p><strong>Empresa</strong></p>
-                        <h2>Título da Vaga</h2>
-                        <p>R$2000,00</p>
+                        <p><strong>{{dataValues.company}}</strong></p>
+                        <h2>{{dataValues.title}}</h2>
+                        <p>{{dataValues.salary}}</p>
                         <span class="badge bg-success">Nova</span>
                         <a href="" class="btn btn-primary btn-sm">Ver Vaga</a>
                     </div>
                 </li>
-                <li class="d-flex align-items-start">
-                    <img src="/img/icon.svg" alt="Company">
-                    <div>
-                        <p><strong>Empresa</strong></p>
-                        <h2>Título da Vaga</h2>
-                        <p>R$2000,00</p>
-                        <a href="" class="btn btn-primary btn-sm">Ver Vaga</a>
-                    </div>
-                </li>
-                <li class="d-flex align-items-start">
-                    <img src="/img/icon.svg" alt="Company">
-                    <div>
-                        <p><strong>Empresa</strong></p>
-                        <h2>Título da Vaga</h2>
-                        <p>R$2000,00</p>
-                        <a href="" class="btn btn-primary btn-sm">Ver Vaga</a>
-                    </div>
-                </li>
+                {{/each}}
             </ul>
         </div>
     </main>
