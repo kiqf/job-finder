@@ -1,7 +1,7 @@
 <div id="top-container">
         <h1 id="main-title">Encontre o Emprego dos seus Sonhos</h1>
         <p id="main-subtitle">Somos o site com mais vagas de tecnologia do mercado direcionadas a home office.</p>
-        <form id="search-form" action="" class="d-flex">
+        <form id="search-form" action="/" method="GET" class="d-flex">
             <input type="text" class="form-control me-2" id="job" name="job" placeholder="Digite o nome da vaga...">
             <button type="submit" class="btn btn-custom">Procurar</button>
         </form>
@@ -9,7 +9,11 @@
 
     <main>
         <div id="jobs-container" class="container">
+            {{#if search}}
+            <h2 id="job-list-title">Buscando vagas que contém: {{search}}</h2>
+            {{else}}
             <h2 id="job-list-title">Veja as nossas vagas em destaque.</h2>
+            {{/if}}
             <ul id="job-list" class="list-unstyled">
                 {{#each jobs}}
                 <li class="d-flex align-items-start">
@@ -17,7 +21,7 @@
                     <div>
                         <p><strong>{{dataValues.company}}</strong></p>
                         <h2>{{dataValues.title}}</h2>
-                        <p>{{dataValues.salary}}</p>
+                        <p>R${{dataValues.salary}}</p>
                         <span class="badge bg-success">Nova</span>
                         <a href="" class="btn btn-primary btn-sm">Ver Vaga</a>
                     </div>
