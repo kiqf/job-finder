@@ -15,21 +15,9 @@ Job Finder é uma aplicação web projetada para conectar candidatos a emprego c
 - **Handlebars**: Motor de templates para renderização dinâmica do conteúdo.
 - **SQLite**: Gerenciamento do banco de dados, onde são armazenadas as vagas.
 
-## Instruções de Configuração
+## Deploy
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/kiqf/job-finder
-    ```
-2. Instale as dependências:
-    ```bash
-    npm install
-    ```
-3. Configure o banco de dados (ex: MongoDB).
-4. Inicie a aplicação:
-    ```bash
-    npm run dev
-    ```
+[Link de deploy em breve]
 
 ## Contribuições
 
